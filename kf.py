@@ -54,7 +54,7 @@ logo=f'''
 {red}| ' /_____| |_ | | | / __|/ __/ _' | __/ _ \| '__|
 {blue}| . \_____|  _|| |_| \__ \ (_| (_| | || (_) | |
 {cyan}|_|\_\    |_|   \__,_|___/\___\__,_|\__\___/|_|
-{purple}                              [By LunaticTunnel]
+{purple}                            [By LunaticTunnel]
 
 '''
 
@@ -231,12 +231,16 @@ def main():
     os.system("clear")
     sprint(logo, 0.01)
     print(f"")
-    print(f"{yellow} CONTOH : ")
+    print(f"{purple}___________________________________________")
+    print(f"{yellow}              CONTOH : ")
     print(f"")
-    print(f"{green} CONTOH INPUT / UNTUK ENCRIPT")
-    print(f"{green}* {cyan} /sdcard/namafle.sh")
-    print(f"{green} CONTOH OUTPUT / HASIL ENCRIPT")
-    print(f"{green}* {cyan} /sdcard/HASIL.sh")
+    print(f"{green} INPUT")
+    print(f"{red}* {cyan} /sdcard/namafle.sh")
+    print(f"{green} OUTPUT")
+    print(f"{red}* {cyan} /sdcard/HASIL.sh")
+    print(f"{purple}___________________________________________")
+    print(f"")
+    print(f"")
     print(f"{purple}___________________________________________")
     print(f"{green}[1]{yellow} Encrypt{cyan} Bash / Shell")
     print(f"{green}[2]{yellow} Decrypt{cyan} Bash / Shell")
