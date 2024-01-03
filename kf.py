@@ -208,7 +208,7 @@ def encryptvar():
     with open(in_file, 'r', encoding='utf-8', errors='ignore') as in_f,open(out_file, 'w') as out_f:
        file_content = in_f.read()
        obfuscated_content = obfuscate(VARIABLE_NAME, file_content)
-       out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n"+obfuscated_content)
+       out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/LunaticTunnel/Absurd\n\n"+obfuscated_content)
     sprint(f"{success}{out_file} saved in {pwd}")
     mover(out_file)
 
@@ -221,7 +221,7 @@ def encryptem():
         encryptem()
     out_file= input(ask + "Output File  > " + green)
     with open(in_file) as in_f, open(out_file, "w", encoding="utf-8") as out_f:
-        out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n")
+        out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/LunaticTunnel/Absurd\n\n")
         out_f.write(encode_string(in_f.read(), alphabet))
         sprint(f"{success}{out_file} saved in {pwd}")
         mover(out_file)
@@ -230,13 +230,22 @@ def encryptem():
 def main():
     os.system("clear")
     sprint(logo, 0.01)
+    print(f"")
+    print(f"{yellow} CONTOH : ")
+    print(f"")
+    print(f"{green} CONTOH INPUT / UNTUK ENCRIPT")
+    print(f"{green}* {cyan} /sdcard/namafle.sh")
+    print(f"{green} CONTOH OUTPUT / HASIL ENCRIPT")
+    print(f"{green}* {cyan} /sdcard/HASIL.sh")
+    print(f"{purple}___________________________________________")
     print(f"{green}[1]{yellow} Encrypt{cyan} Bash / Shell")
     print(f"{green}[2]{yellow} Decrypt{cyan} Bash / Shell")
     print(f"{green}[3]{yellow} Encrypt{cyan} Python into Variable")
     print(f"{green}[4]{yellow} Encrypt{cyan} Python into Emoji")
     print(f"{green}[5]{yellow} More Tools")
     print(f"{green}[6]{yellow} About")
-    print(f"{green}[0]{yellow} Exit")
+    print(f"{green}[0]{red} Exit")
+    print(f"{purple}___________________________________________")
     choose = input(f"{ask}{blue}Choose an option : {cyan}")
     while True:
         if choose == "1" or choose=="01":
