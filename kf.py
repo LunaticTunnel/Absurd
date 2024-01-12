@@ -153,7 +153,7 @@ def encryptsh():
     out_file= input(ask + "Output Filename  > " + green)   
     with open(".temp",'r') as temp_f, open(out_file,'w') as out_f:
         filedata = temp_f.read()
-        out_f.write("# Encrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n"+filedata)
+        out_f.write("# Encrypted by LT | FUSCATOR\n# Github- https://github.com/LunaticTunnel/Absurd\n\n"+filedata)
     os.remove(".temp")
     sprint(f"{success}{out_file} saved in {pwd}")
     mover(out_file)
@@ -177,7 +177,7 @@ def decryptsh():
     os.remove(".temp1")
     with open(".temp2",'r') as temp_f2, open(out_file,'w') as out_f:
         filedata = temp_f2.read()
-        out_f.write("# Decrypted by K-fuscator\n# Github- https://github.com/KasRoudra/k-fuscator\n\n"+filedata)
+        out_f.write("# Decrypted by LT | FUSCATOR\n# Github- https://github.com/LunaticTunnel/Absurd\n\n"+filedata)
     os.remove(".temp2")
     sprint(f"{success}{out_file} saved in {pwd}")
     mover(out_file)
